@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="25dp"
+        android:radius="80dp"
+        app:srcCompat="@drawable/viagem"
+        tools:srcCompat="@drawable/viagem" />
+
+    <TextView
+        android:id="@+id/tViewLogin"
+        android:text="@string/Login"
+        android:textSize="14sp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#CCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textColorHint="#CCC"
+        android:inputType="number"
+        android:background="@drawable/login_edittext_bg"
+    />
+
+    <TextView
+        android:id="@+id/tViewPassaword"
+        android:text="@string/Password"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#CCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#CCC"
+        android:textAlignment="center"
+        android:hint="@string/password_hint"
+        android:background="@drawable/login_edittext_bg"
+    />
+
+    <Button
+        android:id="@+id/btEntrar"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_button_bg"
+        android:text="ENTRAR"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>
